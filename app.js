@@ -1,3 +1,12 @@
+var go = document.getElementById("search-btn");
+var txt = document.getElementById("search");
+
+txt.addEventListener("keypress", function(event) {
+    // event.preventDefault();
+    if (event.keyCode == 13)
+        go.click();
+});
+
 const imagesArea = document.querySelector('.images');
 const gallery = document.querySelector('.gallery');
 const galleryHeader = document.querySelector('.gallery-header');
